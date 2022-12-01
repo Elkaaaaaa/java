@@ -4,7 +4,6 @@ import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -16,9 +15,6 @@ public class ex2 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        String filename="result.csv";
-        Path pathToFile = Paths.get(filename);
-        System.out.println(pathToFile.toAbsolutePath());
         List<Integer> numbs = getList();
         System.out.println(numbs);
         Logger log = logger("logEx2.txt");
