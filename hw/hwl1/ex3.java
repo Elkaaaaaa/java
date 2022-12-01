@@ -3,7 +3,9 @@ package hw.hw.hwl1;
 
 import java.io.IOException;
 import java.util.Scanner;
-
+/*
+    Реализовать простой калькулятор
+ */
 public class ex3 {
     static Scanner scanner = new Scanner(System.in);
 

@@ -6,7 +6,9 @@ import java.util.Scanner;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
-
+/*
+    К калькулятору из предыдущего дз добавить логирование
+ */
 public class ex4 {
     static Scanner scanner = new Scanner(System.in);
     static Logger log;

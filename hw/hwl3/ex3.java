@@ -3,7 +3,9 @@ package hw.hw.hwl3;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+/*
+    Задан целочисленный список ArrayList. Найти минимальное, максимальное и среднее из этого списка
+ */
 public class ex3 {
     static Scanner scanner = new Scanner(System.in);
 

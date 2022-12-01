@@ -3,7 +3,11 @@ package hw.hw.hwl3;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+/*
+Каталог товаров книжного магазина сохранен в виде двумерного списка List<ArrayList<String>> так,
+что на 0й позиции каждого внутреннего списка содержится название жанра, а на остальных позициях - названия книг.
+Напишите метод для заполнения данной структуры.
+ */
 public class ex4 {
     static Scanner scanner = new Scanner(System.in);
 

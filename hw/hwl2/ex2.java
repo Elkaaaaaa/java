@@ -10,7 +10,9 @@ import java.util.Scanner;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
-
+/*
+Реализуйте алгоритм сортировки пузырьком числового массива, результат после каждой итерации запишите в лог-файл.
+ */
 public class ex2 {
     static Scanner scanner = new Scanner(System.in);
 

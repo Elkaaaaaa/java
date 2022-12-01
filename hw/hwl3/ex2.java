@@ -3,7 +3,9 @@ package hw.hw.hwl3;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+/*
+    Пусть дан произвольный список целых чисел, удалить из него четные числа
+ */
 public class ex2 {
     static Scanner scanner = new Scanner(System.in);
 

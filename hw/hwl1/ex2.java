@@ -4,7 +4,9 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+    Вывести все простые числа от 1 до 1000
+ */
 public class ex2 {
     public static void main(String[] args) {
         for (int i = 2; i < 1000; i++) {
