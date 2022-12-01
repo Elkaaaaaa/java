@@ -12,7 +12,6 @@ public class ex4 {
         String w = scanner.next();
         int e = getNumbInt();
         String temp = "?";
-//        List<String> result = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             String temp_i = Integer.toString(i);
             Integer new_q = Integer.valueOf(q.replace(temp, temp_i));

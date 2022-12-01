@@ -1,4 +1,4 @@
-package hw.hwl1;
+package hw.hw.hwl1;
 
 import org.jetbrains.annotations.NotNull;
 
