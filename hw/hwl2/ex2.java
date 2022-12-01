@@ -52,7 +52,7 @@ public class ex2 {
         int length = getNumbInt("Колличество элементов массива: ");
         List<Integer> result = new ArrayList<>();
         for (int i = 0; i < length; i++) {
-            int a = getNumbInt("Введите элемент массива");
+            int a = (int) (Math.random() * 100);
             result.add(a);
         }
         return result;
