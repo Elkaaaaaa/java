@@ -9,23 +9,25 @@ public class ex3 {
 
     public static void main(String[] args) {
         List<Integer> numbs = new ArrayList<>();
+        int sum = 0;
         int count = getNumbInt("Введите количество чисел в списке");
         for (int i = 0; i < count; i++) {
             int a = (int) (Math.random() * 100);
             numbs.add(a);
+            sum = sum + a;
         }
         System.out.println(numbs);
         int min = numbs.get(0);
         int max = numbs.get(0);
         for (int i = 0; i < count; i++) {
-            if (numbs.get(i) > max){
+            if (numbs.get(i) > max) {
                 max = numbs.get(i);
             }
-            if (numbs.get(i) < min){
+            if (numbs.get(i) < min) {
                 min = numbs.get(i);
             }
         }
-        System.out.printf("Наименьше: %d\nНаибольшее: %d", min, max);
+        System.out.printf("Наименьше: %d\nНаибольшее: %d\nСреднее: %d", min, max, sum/count);
     }
 
     public static int getNumbInt(String text) {
