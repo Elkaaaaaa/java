@@ -13,7 +13,7 @@ public class ex4 {
 
     static {
         try {
-            log = logger("logEx3.txt");
+            log = logger("logEx4.txt");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -74,7 +74,7 @@ public class ex4 {
 
     public static Logger logger(String fileName) throws IOException {
         Logger log = Logger.getLogger(ex4.class.getName());
-        String str = "hw\\hw\\hwl2\\";
+        String str = ex4.class.getPackage().getName().replace('.', '\\') + "\\";
         str = str + fileName;
         Path path = Path.of(str).toAbsolutePath();
         FileHandler fh = new FileHandler(path.toString());

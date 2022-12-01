@@ -39,7 +39,7 @@ public class ex2 {
 
     public static Logger logger(String fileName) throws IOException {
         Logger log = Logger.getLogger(ex2.class.getName());
-        String str = "hw\\hw\\hwl2\\";
+        String str = ex2.class.getPackage().getName().replace('.', '\\') + "\\";
         str = str + fileName;
         Path path = Path.of(str).toAbsolutePath();
         FileHandler fh = new FileHandler(path.toString());
