@@ -12,7 +12,11 @@ public class ex4 {
         boolean flag = true;
         while (flag) {
             int flagCheck;
-            System.out.println("Выберете действие:\n0.Выйти\n1.Добавить новую книгу\n2.Напечатать полынй список книг");
+            System.out.println("""
+                    Выберете действие:
+                    0.Выйти
+                    1.Добавить новую книгу
+                    2.Напечатать полынй список книг""");
             String temp = scanner.next();
             if (isDigit(temp)) {
                 flagCheck = Integer.parseInt(temp);
@@ -31,14 +35,13 @@ public class ex4 {
                 System.out.println("Такого действия нет");
             }
         }
-
-
     }
-    public static boolean isDigit(String str){
+
+    public static boolean isDigit(String str) {
         try {
             Integer.parseInt(str);
             return true;
-        } catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             return false;
         }
     }
@@ -46,29 +49,23 @@ public class ex4 {
     public static void addBook(List<ArrayList<String>> list) {
         System.out.println("Напишите название жанра добавляемой книги: ");
         String genre = scanner.next();
-        if (list.isEmpty()) {
+        boolean flag = false;
+        for (ArrayList<String> genres : list) {
+            if (genres.contains(genre)) {
+                flag = true;
+                System.out.println("Напишите название добавляемой книги: ");
+                String name = scanner.next();
+                genres.add(name);
+            }
+        }
+        if (!flag) {
             ArrayList<String> newGenre = new ArrayList<>();
             list.add(newGenre);
             newGenre.add(genre);
             System.out.println("Напишите название добавляемой книги: ");
             String name = scanner.next();
             newGenre.add(name);
-        } else {
-            for (ArrayList<String> genres : list) {
-                if (genres.contains(genre)) {
-                    System.out.println("Напишите название добавляемой книги: ");
-                    String name = scanner.next();
-                    genres.add(name);
-                } else {
-                    ArrayList<String> newGenre = new ArrayList<>();
-                    list.add(newGenre);
-                    newGenre.add(genre);
-                    System.out.println("Напишите название добавляемой книги: ");
-                    String name = scanner.next();
-                    newGenre.add(name);
-                }
-                return;
-            }
         }
     }
 }
+
